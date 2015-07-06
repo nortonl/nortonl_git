@@ -1,19 +1,19 @@
 ##NGS codes master examples
 
-*Bowtie2
+###Bowtie2
 
 bowtie2 --threads 8 -x /home/nortonl/Mus_musculus/UCSC/mm9/Sequence/Bowtie2Index/genome -U /home/nortonl/NGS_data/Norton-day0_AGTTCC_L002_R1_001.fastq -S Day0_TCF7L2.sam
 
 
 
-*Macs2
+###Macs2
 
 macs2 -t Day0_TCF7L2.bam -c Day0_Input.bam -f BAM -g mm -n Day0_3T3L1_TCF7L2 -B -q 0.01
 
 
 
 
-*Samtools
+###Samtools
 
 samtools view -bS eg2.sam > eg2.bam
 
@@ -21,5 +21,5 @@ samtools sort /home/nortonl/NGS_analysis/Day0_Input.bam Day0_Input.sorted
 
 
 
-*IGV
+###IGV
 
